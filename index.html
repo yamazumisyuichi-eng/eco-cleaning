@@ -6,6 +6,8 @@
   <meta name="description" content="練馬区・杉並区を中心に対応するエアコンクリーニング。丁寧な分解・高圧洗浄と消臭抗菌コートで、快適な空気をお届けします。">
   <title>エコクリーニング｜東京のエアコンクリーニング</title>
 
+<link rel="stylesheet" href="style.css">
+
   <style>
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -98,10 +100,63 @@
       h2 { font-size: 25px; }
       .service-list, .reason-list, .flow-list, .prices, .reviews-grid { grid-template-columns: 1fr; }
     }
+    .menu-button {
+
+  display: none;
+
+}
+
+@media (max-width: 700px) {
+
+  .menu-button {
+
+    display: block;
+
+    position: fixed;
+
+    top: 15px;
+
+    right: 15px;
+
+    z-index: 100;
+
+    font-size: 30px;
+
+    background: white;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+  }
+
+  .menu {
+
+    display: none;
+
+  }
+
+  .menu.open {
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+}
+
   </style>
 </head>
 
 <body>
+
+  <button class="menu-button">☰</button>
+
   <nav class="menu">
     <a href="#service">サービス内容</a>
     <a href="#price">料金</a>
@@ -119,11 +174,10 @@
 
   </p>
 
-  <p class="hero-text">
-
-    東京のエアコンクリーニングならお任せください！
-
-  </p>
+<p class="hero-text">
+  練馬区・杉並区を中心に対応<br>
+  壁掛けエアコン 1台 10,000円〜
+</p>
 
   <a href="https://lin.ee/ZQh0DjM" class="button">
 
@@ -191,12 +245,35 @@
       </ol>
     </section>
 
-    <section>
-      <h2>よくあるご質問</h2>
-      <div class="faq-item"><h3>Q. 作業時間はどれくらいですか？</h3><p>A. 通常の壁掛けエアコンで約60〜90分が目安です。</p></div>
-      <div class="faq-item"><h3>Q. 当日の追加料金はありますか？</h3><p>A. 基本的に事前にご案内した料金以外はいただきません。</p></div>
-      <div class="faq-item"><h3>Q. お掃除機能付きか分からない場合は？</h3><p>A. エアコンの型番をLINEで送っていただければ確認いたします。</p></div>
-    </section>
+   <section>
+
+  <h2>よくあるご質問</h2>
+
+  <div class="faq-item">
+
+    <h3 class="faq-question">Q. 作業時間はどれくらいですか？</h3>
+
+    <p class="faq-answer">A. 通常の壁掛けエアコンで約1時間程度が目安です。</p>
+
+  </div>
+
+  <div class="faq-item">
+
+    <h3 class="faq-question">Q. 当日の追加料金はありますか？</h3>
+
+    <p class="faq-answer">A. 基本的に事前にご案内した料金以外はいただきません。</p>
+
+  </div>
+
+  <div class="faq-item">
+
+    <h3 class="faq-question">Q. お掃除機能付きか分からない場合は？</h3>
+
+    <p class="faq-answer">A. 型番をLINEで送っていただければ確認いたします。</p>
+
+  </div>
+
+</section>
 
     <section id="contact" class="contact">
       <h2>ご予約・お問い合わせ</h2>
@@ -206,5 +283,7 @@
   </main>
 
   <footer><p>© 2026 エコクリーニング</p></footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
